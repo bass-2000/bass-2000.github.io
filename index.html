@@ -1,74 +1,333 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <title>Alexander Boyko Personal Website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <!-- script to hide url bar -->
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    <title>Alexander Boyko</title>
-    <meta content="Alexander Boyko's personal page" name="description">
-    <meta content="Alexander Boyko" name="author">
-    <meta content="Alexander Boyko, web developer, java developer" name="keywords">
-    <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- bootstrap-css -->
+    <link href="./css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link href="./css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./css/portfolio.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// css -->
+    <link href="./css/owl.carousel.css" media="all" rel="stylesheet" type="text/css">
+    <link href="./css/owl.theme.css" rel="stylesheet">
+    <link href="./css/cm-overlay.css" rel="stylesheet" type="text/css"/>
+    <!-- font-awesome icons -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300'
+          rel='stylesheet' type='text/css'>
+    <!-- //font -->
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- menu -->
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="./js/main.js" type="text/javascript"></script>
+    <!-- //menu -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
 
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                autoPlay: true,
+                items: 3,
+                itemsDesktop: [640, 5],
+                itemsDesktopSmall: [414, 4]
+
+            });
+
+        });
+    </script>
 </head>
 
 <body>
-<div class="page bg-dark">
-    <div class="left-column">
-        <div class="header">
-            <div class="avatar">
-                <img alt="avatar" height="80px"
-                     src="https://avatars3.githubusercontent.com/u/30622502?s=460&u=0c67dd92fd2539aaad9ccc266537e51aa42c495f&v=4"
-                     width="80px">
-            </div>
-            <h2>Alexander Boyko</h2>
-            <div class="keywords">
-                <ul class="keywords-list">
-                    <li>java</li>
-                    <li>web</li>
-                    <li>agile</li>
-                </ul>
-            </div>
+<!-- banner -->
+<div class="parallax container clearfix" id="home">
 
-        </div>
-        <div class="profiles">
-            <h5>Social links</h5>
-            <ul class="profile-links">
-                <li><a class="common-link linked-in" href="https://www.linkedin.com/in/alexander-boyko-44378b99/"
-                       target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-linkedin"></i> LinkedIn</button>
-                </a>
-                </li>
-                <li><a class="common-link facebook" href="https://www.facebook.com/nsk.boyko" target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-facebook"></i> Facebook</button>
-                </a></li>
-                <li><a class="common-link telegram" href="https://t.me/boyko_a_s" target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-telegram"></i> Write me in Telegram</button>
-                </a></li>
-                <li><a class="common-link email" href="mailto:bass-2000@yandex.ru" target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-envelope-square"></i> Email me</button>
-                </a></li>
-
-                <li><a class="common-link github" href="https://github.com/bass-2000" target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-github"></i> GitHub repo</button>
-                </a></li>
-            </ul>
-            <h5>CV</h5>
-            <ul class="cv-links">
-                <li><a class="common-link cv" href="/Alexander_Boyko_cv.pdf" target="_blank">
-                    <button class="btn btn-secondary"><i class="fa fa-file-pdf"></i> Download CV in PDF</button>
-                </a></li>
-            </ul>
+    <!-- menu -->
+    <div id="toggle_m_nav">
+        <div class="m_nav" id="m_nav_menu">
+            <div class="m_nav_ham" id="m_ham_1"></div>
+            <div class="m_nav_ham" id="m_ham_2"></div>
+            <div class="m_nav_ham" id="m_ham_3"></div>
         </div>
     </div>
-    <div class="right-column">
-        <h3>My stack</h3>
-        <a data-layers="1,2,3,4" data-stack-embed="true" data-theme="dark" frameborder="0"
-           href="https://embed.stackshare.io/stacks/embed/464df36f74ae53d36821b5ee078749"/></a>
-        <script async charset="utf-8" src="https://cdn1.stackshare.io/javascripts/client-code.js"></script>
+
+    <div class="m_nav" id="m_nav_container">
+        <ul class="m_nav" id="m_nav_list">
+            <li class="m_nav_item" id="m_nav_item_1"><a href="#home">Home</a></li>
+            <li class="m_nav_item" id="moble_nav_item_2"><a href="#about">About</a></li>
+            <li class="m_nav_item" id="moble_nav_item_3"><a href="#skills">Skills</a></li>
+            <li class="m_nav_item" id="moble_nav_item_6"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- menu -->
+    <div class="container">
+        <div class="agile-logo">
+            <h1><a href="index.html">Alexander<span>Boyko</span></a></h1>
+        </div>
+        <div class="w3l-banner-grids">
+            <div class="col-md-8 w3ls-banner-right">
+                <div class="banner-right-img">
+                    <img alt="Alexander ava" src="./images/photo.jpeg"/>
+                </div>
+                <div class="banner-right-info">
+                    <h2>Hi, and welcome to my website!</h2>
+                    <p>I'm Alexander Boyko, Full Stack Java Developer and Software Engineer.
+                        A driven web developer who welcomes challenging projects and enjoys working with all sorts of
+                        personalities. Experienced in scripting as well as design patterns. Looking for a full-stack
+                        developer
+                        position.</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="w3-button">
+                    <div class="w3-button-info m_nav_item">
+                        <a class="hvr-sweep-to-bottom" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="social-grids">
+                    <div class="social-info">
+                        <h4>Follow : </h4>
+                    </div>
+                    <div class="agileinfo-social-grids">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/alexander-boyko-44378b99/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/bass-2000" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="https://t.me/boyko_a_s" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://www.facebook.com/nsk.boyko" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4 w3ls-banner-left">
+                <div class="w3ls-banner-left-info">
+                    <h4>Name</h4>
+                    <p>Alexander Boyko</p>
+                </div>
+                <div class="w3ls-banner-left-info">
+                    <h4>Job Title</h4>
+                    <p>Java Full Stack Developer / Software Engineer</p>
+                </div>
+                <div class="w3ls-banner-left-info">
+                    <h4>Address</h4>
+                    <p>Russia, Moscow</p>
+                </div>
+                <div class="w3ls-banner-left-info">
+                    <h4>Resume</h4>
+                    <h5><a href="Alexander_Boyko_cv.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Resume</a>
+                    </h5>
+                </div>
+                <div class="w3ls-banner-left-info">
+                    <h4>Email Address</h4>
+                    <p><a class="hvr-sweep-to-bottom" href="#contact">bass-2000@yandex.ru</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
 </div>
+<!-- //banner -->
+
+<!-- about -->
+<div class="about" id="about">
+    <iframe class="show inback" name="hiddenFrame"></iframe>
+    <div class="container">
+        <div class="wthree-about-grids">
+            <div class="span wthree-about-left">
+                <h3>About Me</h3>
+                <h4>Software engineer.</h4>
+                <p>Hello, my name is Alexander Boyko and I'm a Full Stack Java/JavaEE Developer from Russia<span>
+                    I am someone who is consistently growing themselves and who takes the time to continue learning even though it’s not a direct requirement of the job.  I find that many times it’s a combination of what you study both directly and indirectly related to work
+                </span><span>I think positively and can execute on difficult tasks. I’m not an individual who needs to be micromanaged. Rather, when given a specific task, I can figure out the best ways to solve the problem in an autonomous manner.
+
+                </span></p>
+            </div>
+            <div class="span wthree-about-center" id="skills">
+                <h3>Technologies/Tools I use:</h3>
+                <div class="skills-bar">
+                    <section class='bar'>
+                        <section class='wrap'>
+                            <div class='wrap_right'>
+                                <div class='bar_group'>
+                                    <div class='bar_group__bar thin' label='Java' show_values='false' value='715'></div>
+                                    <div class='bar_group__bar thin' label='SQL' show_values='false' value='350'></div>
+                                    <div class='bar_group__bar thin' label='Maven' show_values='false'
+                                         value='345'></div>
+                                    <div class='bar_group__bar thin' label='Javascript' show_values='false'
+                                         value='415'></div>
+                                    <div class='bar_group__bar thin' label='HTML/CSS' show_values='false'
+                                         value='570'></div>
+                                    <div class='bar_group__bar thin' label='Tomcat/Apache' show_values='false'
+                                         value='270'></div>
+                                    <div class='bar_group__bar thin' label='Git' show_values='false' value='755'></div>
+                                    <div class='bar_group__bar thin' label='JDBC' show_values='false' value='360'></div>
+                                    <div class='bar_group__bar thin' label='Bootstrap' show_values='false'
+                                         value='370'></div>
+                                    <div class='bar_group__bar thin' label='JSP(Java Servlet Pages)' show_values='false'
+                                         value='650'></div>
+                                    <div class='bar_group__bar thin' label='JPA(Java Persistence API)'
+                                         show_values='false' value='500'></div>
+                                    <div class='bar_group__bar thin' label='Gradle' show_values='false'
+                                         value='450'></div>
+                                    <div class='bar_group__bar thin' label='Hibernate' show_values='false'
+                                         value='450'></div>
+                                    <div class='bar_group__bar thin' label='SpringBoot' show_values='false'
+                                         value='475'></div>
+                                    <div class='bar_group__bar thin' label='SpringDataJPA' show_values='false'
+                                         value='380'></div>
+                                    <div class='bar_group__bar thin' label='SpringREST' show_values='false'
+                                         value='425'></div>
+                                    <div class='bar_group__bar thin' label='Rest' show_values='false' value='325'></div>
+                                    <div class='bar_group__bar thin' label='SpringMVC' show_values='false'
+                                         value='475'></div>
+                                    <div class='bar_group__bar thin' label='React' show_values='false'
+                                         value='388'></div>
+                                </div>
+                            </div>
+                            <div class='clear'></div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- about -->
+
+<!-- contact -->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="w3-agileits-statistics-heading experience-heading">
+            <h3>Contact Me</h3>
+        </div>
+        <div class="contact-form">
+            <form action="https://script.google.com/macros/s/AKfycbxMcOLcukMRADdgKH5pKEVmTvaiTO-zwmEAACFZ/exec"
+                  method="post" target="hiddenFrame">
+                <form action="index.html" method="POST">
+                    <div class="fields-grid">
+                        <div class="styled-input agile-styled-input-top">
+                            <input name="FullName" required="" type="text">
+                            <label>Full Name</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            <input name="Phone" required="" type="text">
+                            <label>Phone</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input name="Email" required="" type="text">
+                            <label>Email</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input name="Subject" required="" type="text">
+                            <label>Subject</label>
+                            <span></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="styled-input textarea-grid">
+                        <textarea name="Message" required=""></textarea>
+                        <label>Message</label>
+                        <span></span>
+                    </div>
+                    <input onclick="myFunction()" type="submit" value="SEND">
+                </form>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- //contact -->
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="wrap">
+        <div class="row-content buffer clear-after">
+            <section id="top-footer">
+                <div class="widget column two">
+                    <h4>Menu</h4>
+                    <ul class="plain">
+                        <li><a class="scroll" href="#home">Home</a></li>
+                        <li><a class="scroll" href="#about ">About Me</a></li>
+                        <li><a class="scroll" href="#skills">Skills</a></li>
+                        <li><a class="scroll" href="#contact">Contact</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="widget meta-social column two last">
+                    <div class="soc_icons soc_icons1">
+                        <h4>Follows</h4>
+                        <ul>
+                            <li> Connect with me on LinkedIn <a class="fa fa-linkedin"
+                                                                href="https://www.linkedin.com/in/alexander-boyko-44378b99/"></a>
+                            </li>
+                            <li> Check out my Github Repos <a class="fa fa-github"
+                                                              href="https://github.com/bass-2000"> </a></li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <br>
+                <div class="row">
+                    <div class="span-md-10">
+                        <div id="teeny">
+                            Java Specialist | Java Developer | Java Programmer | JavaEE
+                            | Alexander Boyko Java Specialist | Alexander Boyko Java Developer | Alexander Boyko Java
+                            Programmer | Alexander Boyko Java Fullstack Developer | Alexander
+                            Boyko Full Stack Engineer | Java Specialist in Moscow |
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- //footer -->
+
+<!-- scripts -->
+<script src="./js/jquery.tools.min.js"></script>
+<script src="./js/jquery.mobile.custom.min.js"></script>
+<script src="./js/jquery.cm-overlay.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.cm-overlay').cmOverlay();
+    });
+</script>
+<script>
+    function myFunction() {
+        location.reload();
+    }
+</script>
+<script src="./js/bars.js"></script>
+<script src="./js/owl.carousel.js"></script>
+<script data-cfasync="false"
+        src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"
+        type="text/javascript"></script>
+<!-- //scripts -->
 </body>
+
 </html>
